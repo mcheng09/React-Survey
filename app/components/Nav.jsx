@@ -1,4 +1,5 @@
 var React = require('react');
+var {Link, IndexLink} = require('react-router')
 
 var Nav = React.createClass({
   render: function() {
@@ -15,8 +16,12 @@ var Nav = React.createClass({
             <a className="navbar-brand" href="/">React Survey</a>
             <div className="collaspe navbar-collaspe" id="bs-example-nav-collaspe-1">
               <ul className="nav navbar-nav navbar-right">
-                <li><a href="/">Take Survey</a></li>
-                <li><a href="/">See Results</a></li>
+                <li>
+                  <IndexLink to="/">Take Survey</IndexLink>
+                </li>
+                <li>
+                  <Link to="/results">See Results</Link>
+                </li>
               </ul>
             </div>
           </div>
