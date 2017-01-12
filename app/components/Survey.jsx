@@ -1,5 +1,7 @@
 var React = require('react');
 
+var RadioAnswer = require('RadioAnswer');
+
 var Survey = React.createClass({
   render: function() {
     return (
@@ -16,7 +18,7 @@ var Survey = React.createClass({
             <tbody>
               <tr>
                 <td>How much do you like pizza?</td>
-                <td></td>
+                <td><RadioAnswer/></td>
               </tr>
               <tr>
                 <td>Which is your favorite breed of dogs?</td>
