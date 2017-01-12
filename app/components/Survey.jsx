@@ -1,6 +1,7 @@
 var React = require('react');
 
 var RadioAnswer = require('RadioAnswer');
+var MultiAnswer = require('MultiAnswer');
 
 var Survey = React.createClass({
   render: function() {
@@ -22,7 +23,7 @@ var Survey = React.createClass({
               </tr>
               <tr>
                 <td>Which is your favorite breed of dogs?</td>
-                <td></td>
+                <td><MultiAnswer/></td>
               </tr>
               <tr>
                 <td>Do you know how to snowboard?</td>
