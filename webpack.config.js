@@ -3,6 +3,7 @@ var path = require('path');
 
 module.exports = {
   entry: [
+    'jquery/dist/jquery.min.js',
     './app/app.jsx'
   ],
   externals: {
