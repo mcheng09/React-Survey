@@ -24760,11 +24760,13 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
+	var Nav = __webpack_require__(216);
 
 	var Main = function Main(props) {
 	  return React.createElement(
 	    'div',
 	    null,
+	    React.createElement(Nav, null),
 	    React.createElement(
 	      'h1',
 	      null,
@@ -24774,6 +24776,78 @@
 	};
 
 	module.exports = Main;
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+
+	var Nav = React.createClass({
+	  displayName: "Nav",
+
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      null,
+	      React.createElement(
+	        "nav",
+	        { className: "navbar navbar-default" },
+	        React.createElement(
+	          "div",
+	          { className: "container-fluid" },
+	          React.createElement(
+	            "button",
+	            { type: "button", className: "navbar-toggle collapsed", "data-toggle": "collapse", "data-target": "#bs-example-navbar-collapse-1", "aria-expanded": "false" },
+	            React.createElement(
+	              "span",
+	              { className: "sr-only" },
+	              "Toggle navigation"
+	            ),
+	            React.createElement("span", { className: "icon-bar" }),
+	            React.createElement("span", { className: "icon-bar" }),
+	            React.createElement("span", { className: "icon-bar" })
+	          ),
+	          React.createElement(
+	            "a",
+	            { className: "navbar-brand", href: "/" },
+	            "React Survey"
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "collaspe navbar-collaspe", id: "bs-example-nav-collaspe-1" },
+	            React.createElement(
+	              "ul",
+	              { className: "nav navbar-nav navbar-right" },
+	              React.createElement(
+	                "li",
+	                null,
+	                React.createElement(
+	                  "a",
+	                  { href: "/" },
+	                  "Take Survey"
+	                )
+	              ),
+	              React.createElement(
+	                "li",
+	                null,
+	                React.createElement(
+	                  "a",
+	                  { href: "/" },
+	                  "See Results"
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Nav;
 
 /***/ }
 /******/ ]);
