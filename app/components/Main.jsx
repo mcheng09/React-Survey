@@ -5,7 +5,11 @@ var Main = (props) => {
   return (
     <div>
       <Nav />
-      {props.children}
+      <div className="row">
+        <div className="col-xs-8 col-xs-offset-2 contentContainer">
+          {props.children}
+        </div>
+      </div>
     </div>
   )
 };

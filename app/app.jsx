@@ -6,6 +6,8 @@ var Main = require('Main');
 var Survey = require('Survey');
 var Results = require('Results');
 
+require('style!css!sass!applicationStyles');
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
